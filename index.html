@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chichu - Little Dress</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./styles/css/app.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container_header">
+                <div class="header-main">
+                    <ul class="menu">
+                        <li class="menu-item-socials">
+                            <button class="menu-item-socials btn-socials">
+                                <image src="./images/icons/facebook-link.svg" />
+                            </button>
+                        </li>
+                        <li class="menu-item-socials">
+                            <button class="menu-item-socials btn-socials">
+                                <image src="./images/icons/twitter-link.svg" />
+                            </button>
+                        </li>
+                        <li class="menu-item-socials">
+                            <button class="menu-item-socials btn-socials">
+                                <image src="./images/icons/instagram-link.svg" />
+                            </button>
+                        </li>
+                        <li class="menu-item-hotline">
+                            Hotline: 1900 105204
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-auth">
+                    <div class="header-auth-item">
+                        <image src="./images/icons/cart.svg" />
+                        <span class="header-auth-link item-login"><a href="/login" ">Giỏ hàng</a></span>
+                    </div>
+                        
+                    <div class=" header-auth-item">
+                                <image src="./images/icons/avatar.svg" />
+                                <span class="header-auth-link item-login"><a href="/login" ">Đăng nhập/<span><a href="
+                                        /signin">Đăng kí</a></span>
+                            </a></span>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <main>
+            <section class="main-logo">
+                <div class="container default-width">
+                    <div class="main-logo__container">
+                        <image srcset="./images/logos/chuu_logo.png 2x" class="header-logo" style="width: 107px;
+                        height: 107px;" />
+                        <div class="name-line">Chichu - Little Dress</div>
+                        <ul class="main-logo_menu">
+                            <li class="main-logo_menu-item">
+                                <image src="./images/icons/location.svg" />
+                                <a href="/cart" class="header-auth__menu-login">Dành cho
+                                    đại lý</a>
+                            </li>
+                            <li class="main-logo_menu-item">
+                                <image src="./images/icons/heart-blog.svg" />
+                                <a href="/login" class="header-auth__menu-login">Mom’s Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container default-width">
+                    <div class="menu-list-center-container">
+                        <ul class="menu-list">
+                            <li class="menu-list_item">
+                                <a href="#" class="menu-link">TRANG CHỦ</a>
+                            </li>
+                            <li class="menu-list_item">
+                                <a href="#" class="menu-link">SALE/ GIẢM GIÁ</a>
+                            </li>
+                            <li class="menu-list_item">
+                                <a href="/dk" class="menu-link">NEW/Hàng mới</a>
+                            </li>
+                            <li class="menu-list_item">
+                                <a href="#" class="menu-link">BEST/ BÁN CHẠY</a>
+                            </li>
+                            <li class="menu-list_item">
+                                <a href="#" class="menu-link">Phụ kiện/ ACCESSORIES</a>
+                            </li>
+                            <li class="menu-list_item">
+                                <a href="#" class="menu-link">Quà tặng</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            <section class="main-content">
+
+                <div class="container default-width">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="./images/slideshow1.png" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./images/slideshow1.png" alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./images/slideshow1.png" alt="Third slide">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="center-container">
+                    <div class="text-center__container">
+                        <img class="text-center__decor" src="./images/icons/center-text-decorate.png">
+                        <h1 class="text-center">Hàng mới</h1>
+                    </div>
+                </div>
+                <div class="container default-width">
+                    <div class="row row-cols-4">
+                        <div class="col">
+                            <img src="./images/277574862_174592781574389_2044751020441547393_n 1.png">
+                        </div>
+                        <div class="col">
+                            <img src="./images/277526644_174592804907720_2336481391800629410_n 1.png">
+                        </div>
+                        <div class="col">
+                            <img src="./images/277792252_174592811574386_3100042619848802487_n 1.png">
+                        </div>
+                        <div class="col">
+                            <img src="./images/277568022_174592851574382_8553521704864325444_n 1.png">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="center-container">
+                    <div class="btn-show-all__container">
+                        <button class="btn-show-all-center">
+                            Xem tất cả
+                        </button>
+                    </div>
+                </div>
+                <div class="center-container">
+                    <div class="text-center__container">
+                        <img class="text-center__decor" src="./images/icons/center-text-decorate.png">
+                        <h1 class="text-center">Chichu Kids<span>
+                                <p class="text-center-sm">Little dress</p>
+                            </span></h1>
+
+                    </div>
+                </div>
+                <p class="text-center-content">Chichu Kids - thương hiệu thời trang dành cho bé, thương hiệu thời trang
+                    dành cho bé thương hiệu thời trang dành cho bé thương hiệu thời trang dành cho bé thương hiệu thời
+                    trang dành cho bé thương hiệu thời trang dành cho bé </p>
+                <div class="center-container">
+                    <div class="text-center__container" style="margin-top: 60px; margin-bottom: 0px;">
+                        <h1 class="text-center-size-table">Bảng size baby</h1>
+                    </div>
+                </div>
+                <div class="center-container">
+                    <div class="text-center__container">
+                        <table class="baby-size-table">
+                            <tr>
+                                <th class="row-first" style="font-size: 20px;">Size</th>
+                                <th class="row-first">1</th>
+                                <th class="row-first">2</th>
+                                <th class="row-first">3</th>
+                                <th class="row-first">4</th>
+                                <th class="row-first">5</th>
+                                <th class="row-first">6</th>
+                                <th class="row-first">7</th>
+                            </tr>
+
+                            <tr>
+                                <td class="column-first">Cân nặng (kg)</td>
+                                <td class="column-content">10-12</td>
+                                <td>12-14</td>
+                                <td>13-15</td>
+                                <td>15-17</td>
+                                <td>17-21</td>
+                                <td>22-25</td>
+                                <td>25-28</td>
+                            </tr>
+
+                            <tr>
+                                <td class="column-first">Chiều cao
+                                    (cm)</td>
+                                <td class="column-content">80</td>
+                                <td>90</td>
+                                <td>96</td>
+                                <td>102</td>
+                                <td>108</td>
+                                <td>115</td>
+                                <td>120</td>
+                            </tr>
+
+                            <tr>
+                                <td class="column-first">Vòng ngực
+                                    (cm)</td>
+                                <td class="column-content">51-53</td>
+                                <td>53-55</td>
+                                <td>54-56</td>
+                                <td>55-57</td>
+                                <td>56-58</td>
+                                <td>57-59</td>
+                                <td>58-62</td>
+                            </tr>
+
+                            <tr>
+                                <td class="column-first">Vòng eo (cm)</td>
+                                <td class="column-content">48-50</td>
+                                <td>50-52</td>
+                                <td>51-53</td>
+                                <td>52-54</td>
+                                <td>53-55</td>
+                                <td>54-56</td>
+                                <td>55-58</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="center-container">
+                    <div class="text-center__container">
+                        <img class="text-center__decor-fav" src="./images/icons/common-item-title-decorate.png">
+                        <h1 class="text-center-fav">Sản phẩm được yêu thích</h1>
+                    </div>
+                </div>
+                <div class="container default-width">
+                    <div class="row row-cols-4">
+                        <div class="col item">
+                            <img src="./images/277574862_174592781574389_2044751020441547393_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+
+                        </div>
+                        <div class="col item">
+                            <img src="./images/277526644_174592804907720_2336481391800629410_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+                        </div>
+                        <div class="col item">
+                            <img src="./images/277792252_174592811574386_3100042619848802487_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+                        </div>
+                        <div class="col item">
+                            <img src="./images/277568022_174592851574382_8553521704864325444_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+                        </div>
+                    </div>
+                    <div class="row row-cols-4">
+                        <div class="col item">
+                            <img src="./images/277574862_174592781574389_2044751020441547393_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+
+                        </div>
+                        <div class="col item">
+                            <img src="./images/277526644_174592804907720_2336481391800629410_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+                        </div>
+                        <div class="col item">
+                            <img src="./images/277792252_174592811574386_3100042619848802487_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+                        </div>
+                        <div class="col item">
+                            <img src="./images/277568022_174592851574382_8553521704864325444_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+                        </div>
+                    </div>
+                    <div class="row row-cols-4">
+                        <div class="col item">
+                            <img src="./images/277574862_174592781574389_2044751020441547393_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+
+                        </div>
+                        <div class="col item">
+                            <img src="./images/277526644_174592804907720_2336481391800629410_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+                        </div>
+                        <div class="col item">
+                            <img src="./images/277792252_174592811574386_3100042619848802487_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+                        </div>
+                        <div class="col item">
+                            <img src="./images/277568022_174592851574382_8553521704864325444_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+                        </div>
+                    </div>
+                    <div class="row row-cols-4">
+                        <div class="col item item-end">
+                            <img src="./images/277574862_174592781574389_2044751020441547393_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+
+                        </div>
+                        <div class="col item item-end">
+                            <img src="./images/277526644_174592804907720_2336481391800629410_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+                        </div>
+                        <div class="col item item-end">
+                            <img src="./images/277792252_174592811574386_3100042619848802487_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+                        </div>
+                        <div class="col item item-end">
+                            <img src="./images/277568022_174592851574382_8553521704864325444_n 1.png">
+                            <span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-container">
+                    <div class="btn-show-all__container">
+                        <button class="btn-show-all-center">
+                            Xem tất cả
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <div style="width:100%; height:100px"></div>
+            <section class="main-content">
+                <div class="center-container">
+                    <div class="text-center__container">
+                        <img class="text-center__decor" src="./images/icons/center-text-decorate.png">
+                        <h1 class="text-center">Bộ sưu tập</h1>
+                    </div>
+                </div>
+                <p class="text-center-content">Váy caro nâu nhạt: chất linen thoáng mát, điểm nhấn ở phần ngực áo phối
+                    ren và bèo nhún siêu yêu, họa tiết caro nhẹ nhàng, phong cách tiểu thư Hàn Xẻng đáng yêu.</p>
+                <div class="center-container">
+                    <div class="text-center__container" style="margin-top: 60px; margin-bottom: 0px;">
+                        <div class="row">
+                            <div class="col-6">
+                                <img src="./images/277797728_175733731460294_7587296675189344803_n.png">
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-md-6" style="margin-bottom: 18px;"> <img
+                                            src="./images/277743939_175733738126960_4603002484745567515_n.png"></div>
+                                    <div class="col-md-6"> <img
+                                            src="./images/277558582_174839454883055_4478463010735807795_n 1.png"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6"> <img
+                                            src="./images/277582535_175733751460292_530005626065893124_n.png"></div>
+                                    <div class="col-md-6"> <img
+                                            src="./images/277792252_174592811574386_3100042619848802487_n 2.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="center-container">
+                    <div class="btn-show-all__container">
+                        <button class="btn-show-all-center">
+                            Xem tất cả
+                        </button>
+                    </div>
+                </div>
+                <div class="center-container">
+                    <div class="d-flex justify-content-between">
+                        <div class="story-content">
+                            <div class="story-title">Chichu Story</div>
+                            <p class="story-content-paragraph" style="margin-top: 25px;">Chichu chính là nơi hội tụ
+                                những thương hiệu uy
+                                tín, những sản phẩm dành cho mẹ và bé chính hãng, chất lượng hàng đầu tại Việt Nam.
+                                Không những thế,
+                            </p>
+                            <p class="story-content-paragraph">
+                                Chichu còn mang đến cho Ba/mẹ những trải nghiệm mua sắm tuyệt vời, đáng tin cậy và cam
+                                kết cung cấp các dịch vụ chăm sóc khách hàng, tư vấn bán hàng, tư vấn sử dụng sản phẩm
+                                và các dịch vụ giao nhận hàng tốt nhất.</p>
+                            <p class="story-content-paragraph">
+                                Mời bạn <span class="more-story-info-text">
+                                    xem thêm thông tin về Chichu Story
+                                </span>khác</p>
+                        </div>
+                             <!-- <img class="stoy-image-grand" src="./images/frame-background1.png"> -->
+                        <div >
+                            <img src="./images/chu2 1.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="center-container" style="margin-top: 80px">
+                    <div class="text-center__container">
+                        <img class="text-center__decor" src="./images/blog-title-decorate.png">
+                        <h1 class="text-center">Mom's Blog</h1>
+                    </div>
+                </div>
+                <div class="center-container" style="margin-top: 55px">
+                    <div class="row row-cols-3">
+                        <div class="col">
+                            <img src="./images/diegocervo-1488941339620-1489126233708 1.png" style="width:100%">
+                            <a href="#" class="item-blog">BỔ SUNG VÁNG SỮA, SỮA CHUA CHO BÉ ĐÚNG CÁCH</a>
+                            <p class="item-blog-date">25/04/2022</p>
+                        </div>
+                        <div class="col">
+                            <img src="./images/dau-bung-buon-non-o-tre-em 1.png" style="width:100%">
+                            <a href="#" class="item-blog">CÁC TRIỆU CHỨNG RỐI LOẠN TIÊU HÓA Ở TRẺ DƯỚI 10 TUỔI</a>
+                            <p class="item-blog-date">25/04/2022</p>
+                        </div>
+                        <div class="col ">
+                            <img src="./images/image029-1091123370-d637269282596897317.png" style="width:100%">
+                            <a href="#" class="item-blog">NHỮNG SAI LẦM THƯỜNG GẶP KHI DẠY CON TRẺ</a>
+                            <p class="item-blog-date">25/04/2022</p>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </div>
+    </section>
+    </main>
+    <footer>
+        <section class="footer__form-register">
+            <div class="center-container" style="margin-top: 85px">
+                <div class="default-width">
+
+                    <div class="form-register-background">
+                        <div class="form-register-container">
+                            <div>
+                                <image src="./images/logos/chuu_logo.png" style="width: 154px;
+                            height: 151px;" />
+                            </div>
+                            <div class="form-register-wrap">
+                                <h1 class="form-register-title">ĐĂNG KÝ NHẬN TIN<span>
+                                        <p class="form-register-text">Nhận thông tin sản phẩm mới nhất, tin khuyến mãi
+                                            và nhiều hơn thế nữa</p>
+                                    </span></h1>
+                                <div class="form-register-input-container">
+                                    <input type="text" placeholder="Họ và tên" class="input-form name-form">
+
+                                    <input type="text" placeholder="Email" class="input-form mail-form">
+
+                                    <button class="btn-register">
+                                        Đăng kí
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer-info">
+                <div class="center-container">
+                    <div class="container" style="padding:0 ;">
+                        <div class="row">
+                            <div class="col-sm" style="width:300px">
+                                <h3>Liên hệ</h3>
+                                <hr class="underline-header-info">
+                                <ul class="list-unstyled  footer-item">
+                                    <li style="padding-top:34px; padding-bottom:20px ;"><span
+                                            style="font-weight: bold;">Địa chỉ: </span>Ngõ 394 Lạc Long Quân , Tây Hồ ,
+                                        Hà Nội . </li>
+                                    <li style="padding-bottom:20px ;"><span style="font-weight: bold;">Điện thoại:
+                                        </span>0969305641</li>
+                                    <li><span style="font-weight: bold;">Website: </span>ChichuKids.com </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm">
+                                <h3>Hỗ trợ</h3>
+                                <hr class="underline-header-info">
+                                <ul class="list-unstyled  footer-item">
+                                    <li style="padding-top:34px; padding-bottom:20px; font-weight: bold;">Về chúng tôi
+                                    </li>
+                                    <li style="font-weight: bold;">Liên hệ</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm">
+                                <h3>Chính sách</h3>
+                                <hr class="underline-header-info" style="width: 134px;">
+                                <ul class="list-unstyled  footer-item">
+                                    <li style="padding-top:34px; padding-bottom:20px; font-weight: bold;">Chính sách bảo
+                                        hành</li>
+                                    <li style="padding-bottom:20px;font-weight: bold;">Chính sách bảo mật</li>
+                                    <li style="font-weight: bold;">Quy định đổi trả hàng</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm">
+                                <h3>Fanpage</h3>
+                                <hr class="underline-header-info">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+    </div>
+
+</body>
+
+</html>
