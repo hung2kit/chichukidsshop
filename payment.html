@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/css/app.css">
+    <script src="./scripts/app.js"></script> 
 </head>
 <body>
     <div class="wrapper">
@@ -106,142 +107,160 @@
                 </div>
             </section>
         <section class="main-content">
-            <div class="container default-width">
+            <div class="container default-width" style="margin-top: 40px; margin-bottom:32px">
                 <ul class="breadcrumb">
                     <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">Danh mục</a></li>
-                    <li class="active">Sales</li>
+                    <li><a href="#">Giỏ hàng</a></li>
+                    <li class="active">Thanh toán</li>
                   </ul>
             </div>
-                <div class="center-container">
-                    <div class="text-center__container">
-                        <img class="text-center__decor" src="./images/icons/center-text-decorate.png">
-                        <h1 class="text-center">Sale</h1>
+            <div class="container default-width" style="margin-top: 67px;">
+                <h3 class="primary-color bold ft-18 mg-btm-24">Thông tin nhận hàng</h3>
+            </div>
+            <div class="center-container">
+                <div class="d-flex justify-content-between">
+                    <div class="shipping-info-section-container mg-rgt-20">
+                        <div class="payment-login-container">
+                            <p>
+                                <a class="toggle-dropdown-title"data-toggle="collapse" href="#collapseWithLogin" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Mua hàng có đăng nhập
+                                </a>
+                              </p>
+                              <div class="collapse" id="collapseWithLogin">
+                                <div class="payment-login-form-container">
+                                    <form action="">
+                                        <input type="text" placeholder="Nhập số điện thoại" class="input-text-form phone-form">
+                                        <input type="password" placeholder="Nhập mật khẩu" class="input-text-form password-form">
+                                        <div class="flex-center-container" >
+                                            <input class="input-form-submit" type="submit" value="Đăng Nhập">
+                                        </div>
+                                    </form>
+                                    <h4 class="primary-color bold ft-18 mg-btm-24">Đăng Nhập Bằng Mạng Xã Hội</h3>
+                                    <div class="flex-center-container" >
+                                        <input class="login-sms-action mg-btm-24" type="submit" value="OTP/SMS">
+                                    </div>
+                                    <div class="flex-center-container mg-btm-24" >
+                                        <input class="login-fb-action" type="submit" value="FACEBOOK">
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <hr style="width: 580px;border: 1px solid #C4C4C4;">
+                        <div class="payment-nonlogin-container mg-btm-24">
+                            <p>
+                                <a class="toggle-dropdown-title"data-toggle="collapse" href="#collapseNoLogin" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Mua hàng không cần đăng nhập
+                                </a>
+                              </p>      
+                              <div class="collapse" id="collapseNoLogin">
+                                <div class="payment-login-form-container">
+                                    <form action="">
+                                        <input type="text" placeholder="Nhập họ và tên" class="input-text-form phone-form">
+                                        <input type="text" placeholder="Nhập số điện thoại" class="input-text-form phone-form">
+                                        <select class="select-option province-option" id="province">
+                                            <option value="" selected>Vui lòng chọn Tỉnh/Thành phố</option>
+                                            <option value="volvo">Hồ Chí Minh</option>
+                                            <option value="saab">Hà Nội</option>
+                                            <option value="vw">Hải Phòng</option>
+                                        </select>
+                                        <select class="select-option province-option" id="district">
+                                            <option value="" selected>Vui lòng chọn Quận/Huyện</option>
+                                            <option value="volvo">Quận 1</option>
+                                            <option value="saab">Quận Hà Bà Trưng</option>
+                                            <option value="vw">Quận Hoàn Kiếm</option>
+                                        </select>
+                                        <select class="select-option province-option" id="ward">
+                                            <option value="" selected>Vui lòng chọn Phường/Xã</option>
+                                            <option value="volvo">Volvo</option>
+                                            <option value="saab">Saab</option>
+                                            <option value="vw">VW</option>
+                                        </select>
+                                        <input type="text" placeholder="Địa chỉ" class="input-text-form fullAdress-form">
+                                    </form>
+                                </div>
+                              </div>
+                        </div>
+                        <h3 class="primary-color bold ft-18 mg-btm-24">Phương Thức Thanh Toán</h3>
+                        <div class="payment-method-container">
+                            <div class="table-responsive">
+                                <table class="payment-method-table table table-hover">
+                                  <tbody>
+                                    <tr>
+                                      <td>
+                                        <input type="radio" name="radios" id="radio1" />
+                                      </td>
+                                      <td class="left-content">Thanh toán khi nhận hàng</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <input type="radio" name="radios" id="radio2" />
+                                      </td>
+                                      <td class="left-content">Chuyển khoản qua ngân hàng</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <div class="payment-confim-action-container">
+                                <button class="btn-payment-confirm">
+                                    Thanh toán
+                                </button>
+                              </div>
+                        </div>
                     </div>
                 </div>
-                <div class="center-container">
-                    <div class="d-flex justify-content-between">
-                        <div class="menuSideBar-container" style="margin-right: 20px;">
-                            <p class="menuBar-header-title">Danh Mục Nhóm <span></span></p>
-                            <hr class="underline-header-menuBar">
-                        <ul class="menuBar">
-                            <li class="active menuBar-item">
-                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Sale</a>
-                                <ul class="collapse list-unstyled" id="homeSubmenu">
-                                    <li>
-                                        <a href="#">Home 1</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Home 2</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Home 3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menuBar-item">
-                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Bộ sưu tập mới</a>
-                                <ul class="collapse list-unstyled" id="homeSubmenu">
-                                </ul>
-                            </li>
-                            <li class="menuBar-item">
-                                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Hàng mới</a>
-                                <ul class="collapse list-unstyled" id="homeSubmenu">
-                                </ul>
-                            </li>
-                            <li class="menuBar-item">
-                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Váy</a>
-                                <ul class="collapse list-unstyled" id="pageSubmenu">
-                                </ul>
-                            </li>
-                            <li class="menuBar-item">
-                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Phụ kiện</a>
-                                <ul class="collapse list-unstyled" id="pageSubmenu">
-                                </ul>
-                            </li>
-                            <li class="menuBar-item">
-                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Quà tặng</a>
-                                <ul class="collapse list-unstyled" id="pageSubmenu">
-                                </ul>
-                            </li>
-                            <li class="menuBar-item">
-                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Momy Blog</a>
-                                <ul class="collapse list-unstyled" id="pageSubmenu">
-                                </ul>
-                            </li>
-                            <li class="menuBar-item">
-                                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Dành cho đại lý</a>
-                                <ul class="collapse list-unstyled" id="pageSubmenu">
-                                </ul>
-                            </li>
-                        </ul>
+                <hr style="height:auto; border: 1px solid #C4C4C4;">
+                <div class="product-info-summary-container mg-rgt-20">
+                    <div class="cart-item-container">
+                        <div class="cart-item-image">
+                            <a href="#">
+                                <image src="./images/277582535_175733751460292_5ff30005626065893124_n.png" />
+                            </a>
                         </div>
-                        <div class="container" style="padding:0 ;">
-                            <div class="row">
-                                <div class="col-sm item sale-product-item">
-                                    <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
+                        <div class="cart-item-info">
+                            <a href="#">Váy caro nâu nhạt dễ thương cho bé gái</a>
+                            <div class="cart-item__variant">Kẻ caro nâu, size M</div>
+                        </div>
+                        <div class="cart-item-pricing-info__sub">250,000 <span class="price-currency">đ</span>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class=" pd-15 mg-btm-24">
+                            <div>
+                                <p class="primary-color" style="font-weight: 700;
+                                font-size: 16px;text-transform: capitalize;">Nhập mã giảm giá</p>
+                            </div>
+                            <div class="discount-box mg-btm-24">
+                                <input type="text" placeholder="Mã giảm giá" class="input-form discount-form mg-rgt-20">
+                                <button class="btn-applydiscount bold" style="width: 130px;">
+                                    Áp dụng
+                                </button>
+                            </div>
+                            <div class="flex-item-container">
+                                <div>
+                                    Tổng sản phẩm
                                 </div>
-                                <div class="col-sm item sale-product-item">
-                                    <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
+                                <div>
+                                    250,000 đ
                                 </div>
-                                <div class="col-sm item sale-product-item">
-                                    <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
+                            </div>
+                            <div class="flex-item-container">
+                                <div>Phí vận chuyển
                                 </div>
-                                <div class="col-sm item sale-product-item">
-                                    <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
+                                <div>
+                                    -
                                 </div>
-                                <div class="col-sm item sale-product-item">
-                                    <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
+                            </div>
+                            <hr style="border: 1px solid #C4C4C4;">
+                            <div class="flex-item-container">
+                                <div class="bold">Tạm tính
                                 </div>
-                                <div class="col-sm item sale-product-item">
-                                    <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
-                                </div>
-                                <div class="col-sm item sale-product-item">
-                                    <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
-                                </div>
-                                <div class="col-sm item sale-product-item">
-                                    <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
-                                </div>
-                                <div class="col-sm item sale-product-item">
-                                    <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
-                                </div>
-                                <div class="col-sm item sale-product-item">
-                                    <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
-                                </div>
-                                <div class="col-sm item sale-product-item">
-                                    <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
-                                </div>
-                                <div class="col-sm item sale-product-item">
-                                    <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
-                                </div>
-                                <div class="col-sm item sale-product-item">
-                                    <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
-                                 </div>
-                                <div class="col-sm item sale-product-item">
-                                    <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
-                                </div>
-                                <div class="col-sm item sale-product-item">
-                                    <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
+                                <div class="bold "style="color: #E3999B;">
+                                    250,000 đ
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
+            </div>
         </section>
     </main>
     <footer>

@@ -17,3 +17,10 @@ function getRandomColor() {
     }
     return color;
 }
+
+$('.payment-method-table tbody tr td').click(function (event) {
+    console.log("dfdk")
+    if (event.target.type !== 'radio') {
+        $(':radio', this).trigger('click');
+    }
+});
