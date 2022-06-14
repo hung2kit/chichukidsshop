@@ -708,13 +708,13 @@ ul.breadcrumb li a:hover {
   background: #FFFFFF;
   width: 130px;
   height: 48px;
-  color: #C3493E;
-  border: 2px solid #E3999B;
+  color: #000000;
+  border: 2px solid #C4C4C4;
 }
 
 .selected-option {
-  color: #000000;
-  border: 2px solid #C4C4C4;
+  color: #C3493E;
+  border: 2px solid #E3999B;
 }
 
 .product-single_action {
@@ -922,6 +922,10 @@ background: #E3999B;
 border-radius: 30px;
 }
 
+.btn-order-item a {
+color:#FFFFFF;
+}
+
 .center-content {
   justify-content: center;
 }
@@ -1037,4 +1041,11 @@ border-radius: 100px;
 }
 .discount-form {
   width: 356.6px;
+}
+
+.quantity-box {
+  margin-left: 20px;
+  width: 131px;
+height: 40px;
+border: 2px solid #000000;
 }

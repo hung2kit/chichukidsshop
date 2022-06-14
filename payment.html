@@ -20,7 +20,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/css/app.css">
-    <script src="./scripts/app.js"></script> 
 </head>
 <body>
     <div class="wrapper">
@@ -51,7 +50,7 @@
                 <div class="header-auth">
                     <div class="header-auth-item">
                         <image src="./images/icons/cart.svg" />
-                        <span class="header-auth-link item-login"><a href="/login" ">Giỏ hàng</a></span>
+                        <span class="header-auth-link item-login"><a href="/cart.html" ">Giỏ hàng</a></span>
                     </div>
                     <div class=" header-auth-item">
                                 <image src="./images/icons/avatar.svg" />
@@ -217,10 +216,23 @@
                             </a>
                         </div>
                         <div class="cart-item-info">
-                            <a href="#">Váy caro nâu nhạt dễ thương cho bé gái</a>
+                            <a href="#">Váy caro nâu nhạt dễ thương cho bé gái 1</a>
                             <div class="cart-item__variant">Kẻ caro nâu, size M</div>
                         </div>
-                        <div class="cart-item-pricing-info__sub">250,000 <span class="price-currency">đ</span>
+                        <div class="cart-item-pricing-info__sub">250.000<span class="price-currency">&nbsp;đ</span>
+                        </div>
+                    </div>
+                    <div class="cart-item-container">
+                        <div class="cart-item-image">
+                            <a href="#">
+                                <image src="./images/277582535_175733751460292_5ff30005626065893124_n.png" />
+                            </a>
+                        </div>
+                        <div class="cart-item-info">
+                            <a href="#">Váy caro nâu nhạt dễ thương cho bé gái 2</a>
+                            <div class="cart-item__variant">Kẻ caro nâu, size M</div>
+                        </div>
+                        <div class="cart-item-pricing-info__sub">250.000<span class="price-currency">&nbsp;đ</span>
                         </div>
                     </div>
                     <div class="">
@@ -236,11 +248,11 @@
                                 </button>
                             </div>
                             <div class="flex-item-container">
-                                <div>
+                                <div >
                                     Tổng sản phẩm
                                 </div>
-                                <div>
-                                    250,000 đ
+                                <div class="total_price_item">
+                                    250.000 đ
                                 </div>
                             </div>
                             <div class="flex-item-container">
@@ -254,8 +266,8 @@
                             <div class="flex-item-container">
                                 <div class="bold">Tạm tính
                                 </div>
-                                <div class="bold "style="color: #E3999B;">
-                                    250,000 đ
+                                <div class="bold total_price" style="color: #E3999B;">
+                                    250.000 đ
                                 </div>
                             </div>
                         </div>
@@ -337,4 +349,5 @@
     </footer>
     </div>
 </body>
+<script src="./scripts/payment.js"></script> 
 </html>

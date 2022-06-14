@@ -16,6 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
@@ -50,7 +51,7 @@
                 <div class="header-auth">
                     <div class="header-auth-item">
                         <image src="./images/icons/cart.svg" />
-                        <span class="header-auth-link item-login"><a href="/login" ">Giỏ hàng</a></span>
+                        <span class="header-auth-link item-login"><a href="/cart.html" ">Giỏ hàng</a></span>
                     </div>
                     <div class=" header-auth-item">
                                 <image src="./images/icons/avatar.svg" />
@@ -138,24 +139,33 @@
                                 <div class="product-single_option-item">
                                     <div class="product-single_option-select gap-12">
                                         <div class="product-single_option-select-label">Màu sắc</div>
-                                        <button class="select_option">Kẻ caro nâu
+                                        <button id="caroNau" class="select_option color_option">Kẻ caro nâu
                                         </button>
                                     </div>
                                 </div>
                                 <div class="product-single_option-item">
                                     <div class="product-single_option-select gap-12">
                                         <div class="product-single_option-select-label">Kích thước</div>
-                                        <button class="select_option selected-option">Size M
+                                        <button id="sizeM" class="select_option size_option">Size M
                                         </button>
-                                        <button class="select_option">Size S
+                                        <button id="sizeS" class="select_option size_option">Size S
                                         </button>
                                     </div>
                                 </div>
                                 <div class="product-single_option-item">
                                     <div class="product-single_option-select gap-12">
                                         <div class="product-single_option-select-label">Số lượng</div>
-                                        <!-- <button class="select_option">Kẻ caro nâu
-                                        </button> -->
+                                        <div>
+                                            <table class="quantity-box">
+                                                <tbody>
+                                                <tr>
+                                                <td><button  class="dec_btn"> <image src="./images/icons/decrease_quantity.svg" style="width:24px;height:24px" /></button></td>
+                                                <td class="quantity_value bold">1</td>
+                                                <td><button class="inc_btn"> <image src="./images/icons/increase_quantity.svg" style="width:24px;height:24px" /></button></td>
+                                                </tr>
+                                                </tbody>
+                                                </table>
+                                        </div>
                                     </div> 
                                 </div>
                                 <div class="product-single_action">
@@ -305,4 +315,5 @@
         </footer>
     </div>
 </body>
+<script src="./scripts/product.js"></script> 
 </html>
