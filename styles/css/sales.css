@@ -1,0 +1,23 @@
+@media screen and (max-width: 810px){ 
+    .menuSideBar-container {
+        width: unset !important;
+        height: unset !important;
+        padding: 10px 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+
+    .underline-header-menuBar {
+        width: unset;
+    }
+
+    .d-flex {
+        width: 100%;
+    }
+
+    .menuBar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 10px;
+      }
+}

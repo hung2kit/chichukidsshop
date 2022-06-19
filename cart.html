@@ -21,11 +21,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/css/app.css">
+    <link rel="stylesheet" type="text/css" href="./styles/css/cart.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header sticky">
             <div class="container_header">
                 <div class="header-main">
                     <ul class="menu">
@@ -51,11 +52,12 @@
                 </div>
                 <div class="header-auth">
                     <div class="header-auth-item">
-                        <image src="./images/icons/cart.svg" />
+                        <a href="/cart.html"><image class="cart-icon" src="./images/icons/cart.svg" /></a>
                         <span class="header-auth-link item-login"><a href="/cart.html">Giỏ hàng</a></span>
                     </div>
                     <div class=" header-auth-item">
-                                <image src="./images/icons/avatar.svg" />
+                        <a href="/cart.html"><image class="cart-icon" src="./images/icons/avatar.svg" /></a>
+                                
                                 <span class="header-auth-link item-login"><a href="/login" ">Đăng nhập/<span><a href="
                                         /signin">Đăng kí</a></span>
                             </a></span>
@@ -67,13 +69,13 @@
             <section class="main-logo">
                 <div class="container default-width">
                     <div class="main-logo__container">
-                        <image srcset="./images/logos/chuu_logo.png 2x" class="header-logo" style="width: 107px;
-                        height: 107px;" />
+                        <image srcset="./images/logos/chuu_logo.png 2x" class="header-logo" />
                         <div class="name-line"><a href="/index.html">Chichu - Little Dress</a></div>
                         <ul class="main-logo_menu">
                             <li class="main-logo_menu-item">
                                 <image src="./images/icons/location.svg" />
-                                <a href="/cart" class="header-auth__menu-login">Dành cho đại lý</a>
+                                <a href="/cart" class="header-auth__menu-login">Dành cho
+                                    đại lý</a>
                             </li>
                             <li class="main-logo_menu-item">
                                 <image src="./images/icons/heart-blog.svg" />
@@ -84,26 +86,35 @@
                 </div>
                 <div class="container default-width">
                     <div class="menu-list-center-container">
-                        <ul class="menu-list">
-                            <li class="menu-list_item">
-                                <a href="#" class="menu-link">TRANG CHỦ</a>
-                            </li>
-                            <li class="menu-list_item">
-                                <a href="#" class="menu-link">SALE/ GIẢM GIÁ</a>
-                            </li>
-                            <li class="menu-list_item">
-                                <a href="/dk" class="menu-link">NEW/Hàng mới</a>
-                            </li>
-                            <li class="menu-list_item">
-                                <a href="#" class="menu-link">BEST/ BÁN CHẠY</a>
-                            </li>
-                            <li class="menu-list_item">
-                                <a href="#" class="menu-link">Phụ kiện/ ACCESSORIES</a>
-                            </li>
-                            <li class="menu-list_item">
-                                <a href="#" class="menu-link">Quà tặng</a>
-                            </li>
-                        </ul>
+                        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="navbar-brand" href="#">MENU</a>
+                          
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                              <ul class="navbar-nav mr-auto mt-2 mt-lg-0 menu-list">
+                                <li class="nav-item menu-list_item active">
+                                  <a class=" menu-link" href="#">TRANG CHỦ</a>
+                                </li>
+                                <li class="nav-item menu-list_item">
+                                  <a class="" href="#">SALE/ GIẢM GIÁ</a>
+                                </li>
+                                <li class="menu-list_item">
+                                    <a href="#" class="menu-link">NEW/Hàng mới</a>
+                                </li>
+                                <li class="menu-list_item">
+                                    <a href="#" class="menu-link">BEST/ BÁN CHẠY</a>
+                                </li>
+                                <li class="menu-list_item">
+                                    <a href="#" class="menu-link">Phụ kiện/ ACCESSORIES</a>
+                                </li>
+                                <li class="menu-list_item">
+                                    <a href="#" class="menu-link">Quà tặng</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </nav>
                     </div>
                 </div>
             </section>
@@ -247,22 +258,22 @@
                 </div>
                 <div class="container default-width">
                     <h4 class="primary-color bold ft-18 mg-btm-24">Sản phẩm liên quan</h3>
-                        <div class="row row-cols-4">
+                        <div class="row">
                             <div class="col item">
-                                <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
+                                 <a href="#"><img  src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
+                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
                             </div>
-                            <div class="col item">
+                            <div class="col-md item">
+                                 <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
+                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
+                            </div>
+                            <div class="col-md item">
                                 <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
                                     <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
                             </div>
-                            <div class="col item">
+                            <div class="col-sm item">
                                 <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
-                            </div>
-                            <div class="col item">
-                                <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
-                                <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
+                                    <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
                             </div>
                         </div>
                 </div>
