@@ -1,0 +1,87 @@
+@media screen and (max-width: 811px){ 
+    .image-banner {
+        width: 100%;
+    }
+
+    .blog-text-banner {
+        font-size: 20pt;
+        padding-left: 20px;
+        width: 100%;
+        height: unset;
+    }
+
+    .flex-center {
+        align-items: center;
+    }
+
+    .blog-background-container {
+        height: unset;
+    }
+
+    .blog-background-banner {
+        height: unset;
+    }
+
+    .blog-header-title {
+        width: 390px;
+        text-align: center;
+    }
+    .mom-section-container {
+        display: grid;
+justify-content: center;
+    }
+    .kid-section-container {
+        display: grid;
+justify-content: center;
+        margin-top: 500px;
+        margin-bottom: 500px;
+    }
+
+    .post-content-container {
+        margin-top: 10px;
+    }
+
+    .highlight-posted-blog-container {
+        display: grid;
+        justify-content: center;
+        width: unset;
+        margin: 0 10px;
+      }
+      .new-post-main-container{
+        width: fit-content;
+        height: unset;
+        margin: 0 10px;
+      }
+
+    .new-post-main-image {
+        width: 360px;
+        height: 360px;
+    }
+    .new-posted-blog-container {
+        display: inline
+    }
+
+    .col-8 {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .new-post-main-header-container {
+        width: 360px;
+        padding: 20px 30px;
+    }
+
+    .post-container {
+        margin-bottom: 200px;
+    }
+
+    .sub-posted-container {
+        display: initial;
+        
+    }
+
+    .new-post-sub-image {
+        width: 390px ;
+    }
+
+}

@@ -716,6 +716,10 @@ ul.breadcrumb li a:hover {
   vertical-align: middle;
 }
 
+.product_description_content {
+  width: 100%;
+}
+
 .select_option {
   box-sizing: border-box;
   background: #FFFFFF;
@@ -1290,7 +1294,7 @@ color: #E19B9D;
 }
 
 
-@media screen and (max-width: 810px){
+@media screen and (max-width: 811px){
   .menu-item-hotline {
     font-size: 12px;
   }

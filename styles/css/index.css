@@ -1,0 +1,10 @@
+@media screen and (max-width: 811px){ 
+    .col-custom {
+        width: 200px;
+    }
+    .row-custom {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 10px !important;
+    }
+}

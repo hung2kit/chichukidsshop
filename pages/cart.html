@@ -20,8 +20,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./styles/css/app.css">
-    <link rel="stylesheet" type="text/css" href="./styles/css/cart.css">
+    <link rel="stylesheet" type="text/css" href="../styles/css/app.css">
+    <link rel="stylesheet" type="text/css" href="../styles/css/cart.css">
 </head>
 
 <body>
@@ -32,17 +32,17 @@
                     <ul class="menu">
                         <li class="menu-item-socials">
                             <button class="menu-item-socials btn-socials">
-                                <image src="./images/icons/facebook-link.svg" />
+                                <image src="../images/icons/facebook-link.svg" />
                             </button>
                         </li>
                         <li class="menu-item-socials">
                             <button class="menu-item-socials btn-socials">
-                                <image src="./images/icons/twitter-link.svg" />
+                                <image src="../images/icons/twitter-link.svg" />
                             </button>
                         </li>
                         <li class="menu-item-socials">
                             <button class="menu-item-socials btn-socials">
-                                <image src="./images/icons/instagram-link.svg" />
+                                <image src="../images/icons/instagram-link.svg" />
                             </button>
                         </li>
                         <li class="menu-item-hotline">
@@ -52,11 +52,11 @@
                 </div>
                 <div class="header-auth">
                     <div class="header-auth-item">
-                        <a href="/cart.html"><image class="cart-icon" src="./images/icons/cart.svg" /></a>
-                        <span class="header-auth-link item-login"><a href="/cart.html">Giỏ hàng</a></span>
+                        <a href="/cart.html"><image class="cart-icon" src="../images/icons/cart.svg" /></a>
+                        <span class="header-auth-link item-login"><a href="./cart.html">Giỏ hàng</a></span>
                     </div>
                     <div class=" header-auth-item">
-                        <a href="/cart.html"><image class="cart-icon" src="./images/icons/avatar.svg" /></a>
+                        <a href="/cart.html"><image class="cart-icon" src="../images/icons/avatar.svg" /></a>
                                 
                                 <span class="header-auth-link item-login"><a href="/login" ">Đăng nhập/<span><a href="
                                         /signin">Đăng kí</a></span>
@@ -69,17 +69,17 @@
             <section class="main-logo">
                 <div class="container default-width">
                     <div class="main-logo__container">
-                        <image srcset="./images/logos/chuu_logo.png 2x" class="header-logo" />
+                        <image srcset="../images/logos/chuu_logo.png 2x" class="header-logo" />
                         <div class="name-line"><a href="/index.html">Chichu - Little Dress</a></div>
                         <ul class="main-logo_menu">
                             <li class="main-logo_menu-item">
-                                <image src="./images/icons/location.svg" />
+                                <image src="../images/icons/location.svg" />
                                 <a href="/cart" class="header-auth__menu-login">Dành cho
                                     đại lý</a>
                             </li>
                             <li class="main-logo_menu-item">
-                                <image src="./images/icons/heart-blog.svg" />
-                                <a href="/login" class="header-auth__menu-login">Mom’s Blog</a>
+                                <image src="../images/icons/heart-blog.svg" />
+                                <a href="./blog.html" class="header-auth__menu-login">Mom’s Blog</a>
                             </li>
                         </ul>
                     </div>
@@ -149,12 +149,12 @@
                                 <div class="cart-item-container">
                                     <div class="cart-item-action-delete">
                                         <button id="delete-item-action" onclick="removeCartItemButton()">
-                                            <image src="./images/icons/delete-item-action.svg" />
+                                            <image src="../images/icons/delete-item-action.svg" />
                                         </button>
                                     </div>
-                                    <div class="cart-item-image">
+                                    <div >
                                         <a href="#">
-                                            <image src="./images/277582535_175733751460292_5ff30005626065893124_n.png" />
+                                            <image class="cart-item-image" src="../images/277582535_175733751460292_5ff30005626065893124_n.png" />
                                         </a>
                                     </div>
                                     <div class="cart-item-info">
@@ -162,29 +162,27 @@
                                         <div class="cart-item__variant">Kẻ caro nâu, size M</div>
                                     </div>
                                     <div class="cart-item-pricing">250.000<span class="price-currency">&nbsp;đ</span></div>
-                                    <div>
-                                        <table class="quantity-box">
-                                            <tbody>
-                                            <tr>
-                                            <td><button class="dec_btn"> <image src="./images/icons/decrease_quantity.svg" style="width:24px;height:24px" /></button></td>
-                                            <td class="quantity_value bold">1</td>
-                                            <td><button class="inc_btn"> <image src="./images/icons/increase_quantity.svg" style="width:24px;height:24px" /></button></td>
-                                            </tr>
-                                            </tbody>
-                                            </table>
-                                    </div>
+                                    <table class="quantity-box">
+                                        <tbody>
+                                        <tr>
+                                        <td><button class="dec_btn"> <image src="../images/icons/decrease_quantity.svg" style="width:24px;height:24px" /></button></td>
+                                        <td class="quantity_value bold">1</td>
+                                        <td><button class="inc_btn"> <image src="../images/icons/increase_quantity.svg" style="width:24px;height:24px" /></button></td>
+                                        </tr>
+                                        </tbody>
+                                        </table>
                                     <div class="cart-item-pricing-info__sub">250.000<span class="price-currency">&nbsp;đ</span>
                                     </div>
                                 </div>
                                 <div class="cart-item-container">
                                     <div class="cart-item-action-delete">
                                         <button id="delete-item-action" onclick="removeCartItemButton()">
-                                            <image src="./images/icons/delete-item-action.svg" />
+                                            <image src="../images/icons/delete-item-action.svg" />
                                         </button>
                                     </div>
-                                    <div class="cart-item-image">
+                                    <div >
                                         <a href="#">
-                                            <image src="./images/277582535_175733751460292_5ff30005626065893124_n.png" />
+                                            <image class="cart-item-image" src="../images/277582535_175733751460292_5ff30005626065893124_n.png" />
                                         </a>
                                     </div>
                                     <div class="cart-item-info">
@@ -192,17 +190,15 @@
                                         <div class="cart-item__variant">Kẻ caro nâu, size M</div>
                                     </div>
                                     <div class="cart-item-pricing">250.000<p class="price-currency">&nbsp;đ</p></div>
-                                    <div>
-                                        <table class="quantity-box">
-                                            <tbody>
-                                            <tr>
-                                            <td><button  class="dec_btn"> <image src="./images/icons/decrease_quantity.svg" style="width:24px;height:24px" /></button></td>
-                                            <td id="quantity" class="quantity_value bold">1</td>
-                                            <td><button class="inc_btn" > <image src="./images/icons/increase_quantity.svg" style="width:24px;height:24px" /></button></td>
-                                            </tr>
-                                            </tbody>
-                                            </table>
-                                    </div>
+                                    <table class="quantity-box">
+                                        <tbody>
+                                        <tr>
+                                        <td><button class="dec_btn"> <image src="../images/icons/decrease_quantity.svg" style="width:24px;height:24px" /></button></td>
+                                        <td class="quantity_value bold">1</td>
+                                        <td><button class="inc_btn"> <image src="../images/icons/increase_quantity.svg" style="width:24px;height:24px" /></button></td>
+                                        </tr>
+                                        </tbody>
+                                        </table>
                                     <div class="cart-item-pricing-info__sub">250.000<p class="price-currency">&nbsp;đ</p>
                                     </div>
                                 </div>
@@ -238,7 +234,7 @@
                                         -
                                     </div>
                                 </div>
-                                <hr style="width: 265px;height: 0px;border: 1px solid #C4C4C4;">
+                                <hr class="" style="width: 265px;height: 0px;border: 1px solid #C4C4C4;">
                                 <div class="flex-item-container">
                                     <div class="bold">Tạm tính
                                     </div>
@@ -260,19 +256,19 @@
                     <h4 class="primary-color bold ft-18 mg-btm-24">Sản phẩm liên quan</h3>
                         <div class="row">
                             <div class="col item">
-                                 <a href="#"><img  src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
+                                 <a href="#"><img  src="../images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
                                     <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
                             </div>
                             <div class="col-md item">
-                                 <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
+                                 <a href="#"><img src="../images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
                                     <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
                             </div>
                             <div class="col-md item">
-                                <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
+                                <a href="#"><img src="../images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
                                     <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
                             </div>
                             <div class="col-sm item">
-                                <a href="#"><img src="./images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
+                                <a href="#"><img src="../images/277574862_174592781574389_2044751020441547393_n 1.png"></a>
                                     <a href="#"><span class="item-title">DressNumber1 <span class="item-price">Price 2xx vnd</span></span></a>
                             </div>
                         </div>
@@ -281,18 +277,17 @@
         </main>
         <footer>
             <section class="footer__form-register">
-                <div class="center-container" style="margin-top: 85px">
-                    <div class="default-width">
-                        <div class="form-register-background">
+                <div class="center-container">
+                    <div class="form-register-background">
+                        <div class="center-container default-width">
                             <div class="form-register-container">
-                                <div>
-                                    <image src="./images/logos/chuu_logo.png" style="width: 154px;
-                            height: 151px;" />
+                                <div class="footer-logo">
+                                    <image src="../images/logos/chuu_logo.png" style="width: 154px;
+                                height: 151px;" />
                                 </div>
                                 <div class="form-register-wrap">
                                     <h1 class="form-register-title">ĐĂNG KÝ NHẬN TIN<span>
-                                            <p class="form-register-text">Nhận thông tin sản phẩm mới nhất, tin khuyến
-                                                mãi
+                                            <p class="form-register-text">Nhận thông tin sản phẩm mới nhất, tin khuyến mãi
                                                 và nhiều hơn thế nữa</p>
                                         </span></h1>
                                     <div class="form-register-input-container">
@@ -304,9 +299,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
+                
                 </div>
+            </section>
+            <section>
                 <div class="footer-info">
                     <div class="center-container">
                         <div class="container" style="padding:0 ;">
@@ -316,8 +314,7 @@
                                     <hr class="underline-header-info">
                                     <ul class="list-unstyled  footer-item">
                                         <li style="padding-top:34px; padding-bottom:20px ;"><span
-                                                style="font-weight: bold;">Địa chỉ: </span>Ngõ 394 Lạc Long Quân , Tây
-                                            Hồ ,
+                                                style="font-weight: bold;">Địa chỉ: </span>Ngõ 394 Lạc Long Quân , Tây Hồ ,
                                             Hà Nội . </li>
                                         <li style="padding-bottom:20px ;"><span style="font-weight: bold;">Điện thoại:
                                             </span>0969305641</li>
@@ -328,8 +325,7 @@
                                     <h3>Hỗ trợ</h3>
                                     <hr class="underline-header-info">
                                     <ul class="list-unstyled  footer-item">
-                                        <li style="padding-top:34px; padding-bottom:20px; font-weight: bold;">Về chúng
-                                            tôi
+                                        <li style="padding-top:34px; padding-bottom:20px; font-weight: bold;">Về chúng tôi
                                         </li>
                                         <li style="font-weight: bold;">Liên hệ</li>
                                     </ul>
@@ -338,8 +334,7 @@
                                     <h3>Chính sách</h3>
                                     <hr class="underline-header-info" style="width: 134px;">
                                     <ul class="list-unstyled  footer-item">
-                                        <li style="padding-top:34px; padding-bottom:20px; font-weight: bold;">Chính sách
-                                            bảo
+                                        <li style="padding-top:34px; padding-bottom:20px; font-weight: bold;">Chính sách bảo
                                             hành</li>
                                         <li style="padding-bottom:20px;font-weight: bold;">Chính sách bảo mật</li>
                                         <li style="font-weight: bold;">Quy định đổi trả hàng</li>

@@ -1,0 +1,48 @@
+@media screen and (max-width: 811px){  
+    .cart-section-container {
+        max-width: 370px;
+        margin: auto;
+        height: auto;
+    }
+
+    .cart-section-header-row-container {
+        display: none;
+    }
+
+
+
+    .cart-item-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .cart-item-action-delete {
+        margin-right: 5px;
+    }
+
+    .coupon-shipping-box-container {
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+    .cart-item-info {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .cart-item__variant {
+        font-size: 12px;
+    }
+
+    .cart-item-pricing {
+        display: none;
+    }
+
+    .cart-item-pricing-info__sub {
+        font-size: 12px;
+    }
+
+    .discount-box {
+        display: unset;
+    }
+}

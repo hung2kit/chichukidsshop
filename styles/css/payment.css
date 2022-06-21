@@ -1,4 +1,4 @@
-  @media screen and (max-width: 810px){ 
+  @media screen and (max-width: 811px){ 
 
     .payment-login-form-container {
         width: unset !important;
@@ -18,6 +18,7 @@
 
     .shipping-info-section-container {
         margin-right: 0;
+        width: 300px;
     }
 
     .login-sms-action {
@@ -38,7 +39,7 @@
       }
 
       .cart-item-container {
-        width: 100%;
+        width:300px
       }
 
       .cart-item-info {
@@ -47,6 +48,7 @@
 
       .product-info-summary-container {
         margin-left: 0;
+        margin-top: 20px;
       }
 
       .flex-item-container {
@@ -60,9 +62,20 @@
       .discount-box-container {
         padding: 0;
         margin-bottom: 24px;
+        width: 300px;
       }
 
       .payment-confim-action-container {
-        justify-content: center;
+        justify-content: flex-start;
+      }
+
+      .d-flex {
+        padding-left: 20px;
+      }
+
+      .devide-menu {
+        width: 300px;
+        height: 0px;
+        border: 1px solid #C4C4C4;
       }
 }
